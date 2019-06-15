@@ -1,4 +1,7 @@
 # CHANGELOG
+## 0.1.3
+- modified app.yaml for manual scaling config instead of auto
+
 ## 0.1.2
 - add google cloud app.yaml to deploy to app engine
 
