@@ -1,4 +1,8 @@
 # CHANGELOG
+## 0.1.6
+- removing node_modules
+- modified package.json to run gulp in gcp
+
 ## 0.1.5
 - add gulp to scripts to add to path for GCP
 
