@@ -1,4 +1,7 @@
 # CHANGELOG
+## 0.1.4
+- modified app.yaml back to autoscaling as well as fixed syntax
+
 ## 0.1.3
 - modified app.yaml for manual scaling config instead of auto
 
