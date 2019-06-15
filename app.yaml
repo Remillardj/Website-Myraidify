@@ -1,0 +1,11 @@
+runtime: nodejs10
+
+instance_class: f1-micro
+
+env_variables:
+  BUCKET_NAME: "myraidify.appspot.com"
+
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto

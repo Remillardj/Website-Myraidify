@@ -1,4 +1,7 @@
 # CHANGELOG
+## 0.1.2
+- add google cloud app.yaml to deploy to app engine
+
 ## 0.1.1
 - added link to Open Source Development portfolio section of the website to view design live
 
