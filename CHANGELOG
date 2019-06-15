@@ -1,4 +1,7 @@
 # CHANGELOG
+## 0.1.5
+- add gulp to scripts to add to path for GCP
+
 ## 0.1.4
 - modified app.yaml back to autoscaling as well as fixed syntax
 
