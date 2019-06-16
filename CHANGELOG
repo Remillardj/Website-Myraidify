@@ -1,4 +1,7 @@
 # CHANGELOG
+## 0.1.8
+- found bug, gulp doesnt copy to public folder
+
 ## 0.1.7
 - add firebase as hosting solution
 - integrate travis ci
