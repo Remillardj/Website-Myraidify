@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "myraidify",
+    "prod": "myraidify"
+  }
+}

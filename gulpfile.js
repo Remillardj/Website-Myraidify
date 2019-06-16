@@ -47,6 +47,12 @@ function clean() {
   return del(["./vendor/"]);
 }
 
+// copy to public folder for firebase deployment
+gulp.task('copy', function() {
+  gulp.src('./index.html').pipe(gulp.dest('./public/index.html'));
+  gulp.src('./img/**/*').pipe(gulp.dest('./public/img/'));
+})
+
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
   // Bootstrap JS
@@ -64,12 +70,13 @@ function modules() {
   // Magnific Popup
   var magnificPopup = gulp.src('./node_modules/magnific-popup/dist/*')
     .pipe(gulp.dest('./vendor/magnific-popup'));
+    gulp.src('./node_modules/magnific-popup/dist/*').pipe(gulp.dest("./public/vendor/magnific-popup"));
   // jQuery
   var jquery = gulp.src([
       './node_modules/jquery/dist/*',
       '!./node_modules/jquery/dist/core.js'
     ])
-    .pipe(gulp.dest('./vendor/jquery'));
+    .pipe(gulp.dest('./vendor/jquery')).pipe(gulp.dest("./public/vendor/jquery/"));
   return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, magnificPopup);
 }
 
@@ -96,6 +103,7 @@ function css() {
     }))
     .pipe(cleanCSS())
     .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest("./public/css/"))
     .pipe(browsersync.stream());
 }
 
@@ -114,6 +122,7 @@ function js() {
       suffix: '.min'
     }))
     .pipe(gulp.dest('./js'))
+    .pipe(gulp.dest("./public/js/"))
     .pipe(browsersync.stream());
 }
 
