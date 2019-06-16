@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "node"
 script:
-  - gulp watch
+  - gulp watch && exit
 deploy:
   provider: firebase
   token:
