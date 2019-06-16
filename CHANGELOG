@@ -1,4 +1,7 @@
 # CHANGELOG
+## 0.1.9
+- add robots.txt for indexing
+
 ## 0.1.8
 - found bug, gulp doesnt copy to public folder
 
