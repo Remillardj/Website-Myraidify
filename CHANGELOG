@@ -1,4 +1,8 @@
 # CHANGELOG
+## 0.1.7
+- add firebase as hosting solution
+- integrate travis ci
+
 ## 0.1.6
 - removing node_modules
 - modified package.json to run gulp in gcp
