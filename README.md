@@ -1,6 +1,6 @@
 # Concise and Simple
 
-Multipage website to display your works.
+Single page website to display your works.
 
 ## Preview
 ![Preview](local_images/preview.png)
