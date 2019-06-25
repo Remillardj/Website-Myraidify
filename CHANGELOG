@@ -1,4 +1,8 @@
 # CHANGELOG
+## 0.1.11
+- integrated Selz to sell template / digital goods
+- added toggleSlide() feature to show web development services
+
 ## 0.1.10
 - add preview image to README
 

@@ -47,12 +47,6 @@ function clean() {
   return del(["./vendor/"]);
 }
 
-// copy to public folder for firebase deployment
-gulp.task('copy', function() {
-  gulp.src('./index.html').pipe(gulp.dest('./public/index.html'));
-  gulp.src('./img/**/*').pipe(gulp.dest('./public/img/'));
-})
-
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
   // Bootstrap JS
@@ -146,3 +140,21 @@ exports.vendor = vendor;
 exports.build = build;
 exports.watch = watch;
 exports.default = build;
+
+gulp.task('clean_public', function() {
+  console.log("Cleaning public directory");
+  return del('./public/**', {force: true});
+});
+
+// copy to public folder for firebase deployment
+gulp.task('copy', async ()=> {
+  console.log("Starting to copy and place files in public folder");
+  gulp.src(['./index.html'], {base: '.'}).pipe(gulp.dest('./public/'));
+  gulp.src(['./404.html'], {base: '.'}).pipe(gulp.dest('./public/'));
+  gulp.src(['./robots.txt'], {base: '.'}).pipe(gulp.dest('./public/'));
+  gulp.src(['./img/**/*'], {base: './img'}).pipe(gulp.dest('./public/img/'));
+  gulp.src(['./css/**/*'], {base: './css'}).pipe(gulp.dest('./public/css/'));
+  gulp.src(['./js/**/*'], {base: './js'}).pipe(gulp.dest('./public/js/'));
+  gulp.src(['./vendor/**/*'], {base: './vendor'}).pipe(gulp.dest('./public/vendor/'));
+  console.log("Finished copying and place files in public folder!");
+});

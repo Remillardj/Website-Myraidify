@@ -2,7 +2,9 @@ language: node_js
 node_js:
   - "node"
 script:
-  - gulp
+  - gulp build
+  - gulp clean_public
+  - gulp copy
 deploy:
   provider: firebase
   token:

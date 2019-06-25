@@ -3,7 +3,7 @@
 Multipage website to display your works.
 
 ## Preview
-![Preview](local_images/preview.png)
+![Preview](/local_images/preview.png)
 
 ## Status
 
@@ -34,6 +34,8 @@ After installation, run `npm install` and then run `npm start` which will open u
 - `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
 - `gulp js` minifies the themes JS file
 - `gulp vendor` copies dependencies from node_modules to the vendor directory
+- `gulp clean_public` cleans the public directory which is used for publishing to Firebase
+- `gulp copy` copies the primary files for the website over to public/ directory which is used for Firebase hosting
 
 You must have npm installed globally in order to use this build environment.
 
