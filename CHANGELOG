@@ -1,4 +1,7 @@
 # CHANGELOG
+## 0.1.12
+- update lodash to use latest security patch
+
 ## 0.1.11
 - integrated Selz to sell template / digital goods
 - added toggleSlide() feature to show web development services
