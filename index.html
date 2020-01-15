@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Myraidify - Web Development and Security</title>
+  <title>Web Development, IT Services, & Security - Myraidify</title>
 
   <!-- Font Awesome Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,9 +19,17 @@
 
   <!-- Plugin CSS -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
   <!-- Custom JS For Toggling -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -31,6 +39,29 @@
         $("#webdev").slideToggle('hide show');
       });
     });
+
+    $(document).ready(function(){
+			$('.customer-logos').slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				arrows: false,
+				dots: false,
+					pauseOnHover: false,
+					responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 2
+					}
+				}]
+			});
+		});
   </script>
 
 </head>
@@ -72,7 +103,7 @@
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">Let us help you save website hosting costs so you can focus on your business.</p>
+          <p class="text-white-75 font-weight-light mb-5">Let us help you cut costs so you can focus on building your business.</p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
         </div>
       </div>
@@ -104,34 +135,32 @@
           <div class="mt-5">
             <a href="#contact" class="btn">
             <i class="fas fa-4x fa-external-link-alt text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Website Migration</h3>
-            <p class="text-muted mb-0">Tired of your website hosting solution? Let us move it to a better or <b><i>near-free</i></b> hosting plan.</p>
+            <h3 class="h4 mb-2">Migration & Quality Assurance</h3>
+            <p class="text-muted mb-0">Lets move your website to a better or <b><i>near-free</i></b> hosting plan and speed up the loadtime.</p>
             </a>
-            <a href="#contact" class="btn btn-primary js-scroll-trigger">Contact us!</a>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
-            <i class="fas fa-4x fa-bug text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Website Design Quality Assurance</h3>
-            <p class="text-muted mb-0">Ensure your website is loading fast and optimized for all devices and browsers.</p>
+            <i class="fas fa-4x fa-code text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Web Design / Development</h3>
+            <p class="text-muted mb-0">Let us create beautiful designs & functionality to retain your visitors.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
-            <i class="fas fa-4x fa-user-lock text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Security Inspection</h3>
-            <p class="text-muted mb-0">Make sure your website is compliant and safe. Specializing in HIPPA and SOX-SOC2 compliance.</p>
+            <i class="fas fa-4x fa-network-wired text-primary mb-4"></i>
+            <h3 class="h4 mb-2">IT Services</h3>
+            <p class="text-muted mb-0">Use our years of experience to solve your technical needs for your business. Let's get you worry-free about your computers.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
             <a class="btn toggle">
-            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Website Development</h3>
-            <p class="text-muted mb-0">If you're starting your business or need patches or changes to your current website, we are here for you.</p>
+            <i class="fas fa-4x fa-user-shield text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Cybersecurity</h3>
+            <p class="text-muted mb-0">It's more costly to not invest in cybersecurity than to invest in it. Let us ensure you are safe from malicious attacks.</p>
             </a>
-            <button class="btn btn-primary toggle">Learn More!</button>
           </div>
         </div>
       </div>
@@ -139,40 +168,55 @@
   </section>
   </div>
 
-  <div class="hide" id="webdev">
+  <!-- About Section -->
+  <section class="page-section bg-primary" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="text-center">
+          <h2 class="text-white mt-0">Here are some of our clients.</h2>
+          <hr class="divider light my-4">
+        </div>
+        <div class="flex-container justify-content-center">
+          <div><img src="img/brands/logo1.png" alt="logo"></div>
+          <div><img src="img/brands/logo2.png" alt="logo"></div>
+          <div><img src="img/brands/logo3.png" alt="logo"></div>  
+          <div><img src="img/brands/logo4.png" alt="logo"></div>
+          <div><img src="img/brands/logo5.png" alt="logo"></div>
+          <div><img src="img/brands/logo6.png" alt="logo"></div>
+        </div>
+      </div>
+    </div>
+  </section> 
+          
+
+  <div id="webdev">
   <section class="page-section py-3 pb-5">
       <div class="container-fluid py-5">
         <div class="row text-center align-items-end">
           <!-- Pricing Table-->
           <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="bg-white p-5 rounded-lg shadow">
-              <h1 class="h6 text-uppercase font-weight-bold mb-4">Basic Template</h1>
-              <h2 class="h1 font-weight-bold"><s>$60</s> $50 only!</h2>
-              <h3 class="h2 font-weight-light text-danger">On sale!</h3>
-    
+              <h1 class="h6 text-uppercase font-weight-bold mb-4">Website Migration, Design, & Development</h1>
+              <h2 class="h1 font-weight-bold">$75 <span class="text-small font-weight-normal ml-2">/ hour</span></h2>
               <div class="custom-separator my-4 mx-auto bg-primary"></div>
     
               <ul class="list-unstyled my-5 text-small text-left">
                 <li class="mb-3">
                   <i class="fa fa-check mr-2 text-primary"></i> Fully responsive design for any device</li>
                 <li class="mb-3">
-                  <i class="fa fa-check mr-2 text-primary"></i> Host the website on whatever provider</li>
+                  <i class="fa fa-check mr-2 text-primary"></i> Migrate the website to a cheaper and better provider</li>
                 <li class="mb-3">
-                  <i class="fa fa-check mr-2 text-primary"></i> No annual renewals</li>
-                <li class="mb-3 text-muted">
-                  <i class="fa fa-times mr-2"></i>
-                  <del>Technical Support</del>
-                </li>
-                <li class="mb-3 text-muted">
-                  <i class="fa fa-times mr-2"></i>
-                  <del>Scheduling/Booking integration</del>
-                </li>
-                <li class="mb-3 text-muted">
-                  <i class="fa fa-times mr-2"></i>
-                  <del>Setup website on free hosting service</del>
-                </li>
+                  <i class="fa fa-check mr-2 text-primary"></i> No annual fees</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Quality Assurance & Cross Browser Compatibility</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Free 3 Months Maintance</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Utilize beautiful designs to retain your visitors</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Custom web software built just for you</li>
               </ul>
-              <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill" data-toggle="modal" data-target="#templates">Get Shopping</a>
+              <a href="#contact" class="btn btn-primary btn-block p-2 shadow rounded-pill js-scroll-trigger">Contact us for a free quote!</a>
             </div>
           </div>
           <!-- END -->
@@ -180,24 +224,24 @@
           <!-- Pricing Table-->
           <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="bg-white p-5 rounded-lg shadow">
-              <h1 class="h6 text-uppercase font-weight-bold mb-4">Essentials</h1>
-              <h2 class="h1 font-weight-bold">$200 fee + $60<span class="text-small font-weight-normal ml-2">/ hour</span></h2>
-              <h3 class="h2 font-weight-light text-success">Recommended!</h3>
+              <h1 class="h6 text-uppercase font-weight-bold mb-4">IT Services</h1>
+              <h2 class="h1 font-weight-bold">$80 <span class="text-small font-weight-normal ml-2">/ hour</span></h2>
               <div class="custom-separator my-4 mx-auto bg-primary"></div>
               <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
                 <li class="mb-3">
-                  <i class="fa fa-check mr-2 text-primary"></i> Website Template for <s>$60</s> <b>$40</b>!</li>
+                  <i class="fa fa-check mr-2 text-primary"></i> PC & Mac Support and Acquisition Consulting</li>
+                  <li class="mb-3">
+                    <i class="fa fa-check mr-2 text-primary"></i> Data storage and Database Consulting</li>
                 <li class="mb-3">
-                  <i class="fa fa-check mr-2 text-primary"></i> Assemble near-free hosting services</li>
+                  <i class="fa fa-check mr-2 text-primary"></i> Optimize your computers for more reliability</li>
                 <li class="mb-3">
-                  <i class="fa fa-check mr-2 text-primary"></i> No annual renewals</li>
+                  <i class="fa fa-check mr-2 text-primary"></i> Answer any and all technical questions</li>
                 <li class="mb-3">
-                  <i class="fa fa-check mr-2 text-primary"></i> Scheduling/Booking Integration</li>
+                  <i class="fa fa-check mr-2 text-primary"></i> Troubleshoot software/hardware or network issues</li>
                 <li class="mb-3">
-                  <i class="fa fa-check mr-2 text-primary"></i> Free Website Quality Assurance Testing</li>
-                <li class="mb-3 text-muted">
-                  <i class="fa fa-times mr-2"></i>
-                  <del>Technical Support</del>
+                  <i class="fa fa-check mr-2 text-primary"></i> Virtual Technical Support</li>
+                  <li class="mb-3">
+                    <i class="fa fa-check mr-2 text-primary"></i> Business Systems Consulting & Integration</li>
                 </li>
               </ul>
               <a href="#contact" class="btn btn-primary btn-block p-2 shadow rounded-pill js-scroll-trigger">Get Started!</a>
@@ -209,25 +253,26 @@
           <!-- Pricing Table-->
           <div class="col-lg-4">
             <div class="bg-white p-5 rounded-lg shadow">
-              <h1 class="h6 text-uppercase font-weight-bold mb-4">Premier</h1>
-              <h2 class="h1 font-weight-bold">Custom Pricing</span></h2>
-              <h3 class="h2">Need more customization?</h3>
+              <h1 class="h6 text-uppercase font-weight-bold mb-4">Cybersecurity Auditing</h1>
+              <h2 class="h1 font-weight-bold">$120 <span class="text-small font-weight-normal ml-2">/ hour</span></span></h2>
     
               <div class="custom-separator my-4 mx-auto bg-primary"></div>
     
               <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
                 <li class="mb-3">
-                  <i class="fa fa-check mr-2 text-primary"></i> Website Design/Redesign</li>
+                  <i class="fa fa-check mr-2 text-primary"></i> Physical Security Auditing & Consulting</li>
                 <li class="mb-3">
-                  <i class="fa fa-check mr-2 text-primary"></i> Website Development</li>
+                  <i class="fa fa-check mr-2 text-primary"></i> Computer Software/Hardware Auditing & Consulting</li>
                 <li class="mb-3">
-                  <i class="fa fa-check mr-2 text-primary"></i> Search Engine Optimization</li>
+                  <i class="fa fa-check mr-2 text-primary"></i> Anti-virus and phishing technical training</li>
+                  <li class="mb-3">
+                    <i class="fa fa-check mr-2 text-primary"></i> Basic Cybersecurity Technical Training</li>
                 <li class="mb-3">
-                  <i class="fa fa-check mr-2 text-primary"></i> Assemble hosting services</li>
+                  <i class="fa fa-check mr-2 text-primary"></i> Network Systems Auditing & Consulting</li>
                 <li class="mb-3">
-                  <i class="fa fa-check mr-2 text-primary"></i> Technical Support</li>
+                  <i class="fa fa-check mr-2 text-primary"></i> Security Vulnerability Assessment</li>
                 <li class="mb-3">
-                  <i class="fa fa-check mr-2 text-primary"></i> Custom widget integration</li>
+                  <i class="fa fa-check mr-2 text-primary"></i> Website & Network Hardening</li>
               </ul>
               <a href="#contact" class="btn btn-primary btn-block p-2 shadow rounded-pill js-scroll-trigger">Contact Us!</a>
             </div>
@@ -384,7 +429,7 @@
       <div class="row">
         <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
           <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <div>+1 (202) 555-0149</div>
+          <div>+1 (612) 470-3481‬</div>
         </div>
         <div class="col-lg-4 mr-auto text-center">
           <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
@@ -398,7 +443,7 @@
   <!-- Footer -->
   <footer class="bg-light py-5">
     <div class="container">
-      <div class="small text-center text-muted">Designed by Myraidify, Inc</div>
+      <div class="small text-center text-muted">Designed by Myraidify, LLC</div>
     </div>
   </footer>
 
